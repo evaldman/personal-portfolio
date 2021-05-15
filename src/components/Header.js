@@ -5,10 +5,10 @@ function Header() {
   return (
     <div className="header-wrapper">
       <div className="main-info">
-        <h1>some text</h1>
+        <h1>full-stack software engineer</h1>
         <Typed
           className="typed-text"
-          strings={["some other text", "more text"]}
+          strings={["Javascript", "React", "Ruby on rails", "Ruby"]}
           typeSpeed={40}
           backSpeed={60}
           loop

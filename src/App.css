@@ -37,6 +37,7 @@ nav a.navbar-brand {
 nav a.navbar-brand:hover {
   font-size: 52px;
   margin-left: -20px;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar-nav > li > a.active,
@@ -54,7 +55,8 @@ nav .container {
 
 .header-wrapper {
   position: relative;
-  background: url(portfolio-background.jpeg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(portfolio-background.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -108,5 +110,12 @@ nav .container {
   z-index: 1;
 }
 
-.particles-canvas {
+@media (max-width: 768px) {
+  nav a.navbar-brand {
+    font-size: 36px;
+  }
+  nav a.navbar-brand:hover {
+    font-size: 36px;
+    margin-left: 0;
+  }
 }
