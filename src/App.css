@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif !important;
 }
 
 nav {
@@ -112,10 +112,38 @@ nav .container {
 
 @media (max-width: 768px) {
   nav a.navbar-brand {
-    font-size: 36px;
+    font-size: 30px;
   }
   nav a.navbar-brand:hover {
     font-size: 36px;
     margin-left: 0;
+  }
+}
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 1px solid;
+}
+
+.about-heading {
+  color: orange;
+  text-transform: uppercase;
+}
+
+@media (max-width: 468px) {
+  .profile-img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
   }
 }
