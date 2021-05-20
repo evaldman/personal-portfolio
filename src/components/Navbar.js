@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#">
           Yevgeniy Valdman
@@ -22,19 +23,32 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
+              <Link
+                smooth={true}
+                to="about"
+                offset={-110}
+                className="nav-link"
+                href="#"
+                duration={100}
+              >
                 about <span className="sr-only"></span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link
+                smooth={true}
+                to="projects"
+                // offset={-110}
+                className="nav-link"
+                href="#"
+              >
                 projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                writing
-              </a>
+              <Link smooth={true} to="contact" className="nav-link" href="#">
+                contact me
+              </Link>
             </li>
           </ul>
         </div>

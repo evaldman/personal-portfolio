@@ -13,8 +13,12 @@ function Header() {
           backSpeed={60}
           loop
         />
-        <a href="#" className="btn-main-offer">
-          Contact me
+        <a
+          href="https://docs.google.com/document/d/1eMVmUxr2C4FjsbvsFnWN4Y29KAaWUrjAzq_g8PWPhrI"
+          target="_blank"
+          className="btn-main-offer"
+        >
+          view my resume
         </a>
       </div>
     </div>

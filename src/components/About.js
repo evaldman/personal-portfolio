@@ -3,7 +3,10 @@ import profile from "../profile-pic.jpg";
 
 function About() {
   return (
-    <div className="container py-5">
+    <div id="about" className="container py-5">
+      <h1 className="about-heading text-uppercase text-center py-5">
+        about me
+      </h1>
       <div className="row">
         <div className="col-lg-6 col-xm-12">
           <div className="photo-wrap mb-5">
@@ -11,7 +14,6 @@ function About() {
           </div>
         </div>
         <div className="col-lg-6 col-xm-12">
-          <h1 className="about-heading">about me</h1>
           <p>
             Full stack web developer with experience in Ruby on Rails,
             Javascript and React. Interested in designing creative and engaging

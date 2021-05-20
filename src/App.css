@@ -59,7 +59,7 @@ nav .container {
     url(portfolio-background.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -145,5 +145,42 @@ nav .container {
     width: 230px;
     height: 230px;
     object-fit: cover;
+  }
+}
+
+.project-wrapper {
+  background: rgb(175, 162, 145);
+  padding: 3rem 0;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.video-wrapper {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+@media (max-width: 768px) {
+  .video-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
   }
 }
