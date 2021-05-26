@@ -26,7 +26,7 @@ function Navbar() {
               <Link
                 smooth={true}
                 to="about"
-                offset={-110}
+                offset={-105}
                 className="nav-link"
                 href="#"
                 duration={100}
@@ -38,7 +38,7 @@ function Navbar() {
               <Link
                 smooth={true}
                 to="projects"
-                // offset={-110}
+                offset={-105}
                 className="nav-link"
                 href="#"
               >

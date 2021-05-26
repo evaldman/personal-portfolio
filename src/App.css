@@ -135,9 +135,8 @@ nav .container {
   border: 1px solid;
 }
 
-.about-heading {
+.heading {
   color: orange;
-  text-transform: uppercase;
 }
 
 @media (max-width: 468px) {
@@ -176,6 +175,15 @@ nav .container {
   grid-row-gap: 1em;
 }
 
+.project-card {
+  width: 90%;
+  border: rgb(46, 233, 240) solid 1px;
+  padding: 10px;
+  box-shadow: 0px 0px 20px 8px rgb(46, 233, 240);
+  margin: 3%;
+  background-color: rgb(9, 32, 77);
+}
+
 @media (max-width: 768px) {
   .video-wrapper {
     display: grid;
@@ -183,4 +191,94 @@ nav .container {
     grid-column-gap: 1em;
     grid-row-gap: 1em;
   }
+}
+
+.contact {
+  background: rgb(9, 32, 77);
+  padding: 3rem 0;
+}
+
+.contact h1 {
+  color: orange;
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+.contact p {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 2px solid rgb(104, 100, 100);
+  border-radius: 0;
+  color: orange;
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.contact .container {
+  padding: 4rem 0;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  background: transparent;
+  color: orange;
+  border-bottom: 2px solid rgb(104, 100, 100);
+}
+
+.contact textarea {
+  height: 12.2rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 2px;
+  background: orange;
+  display: inline-block;
+}
+
+input:focus + .line,
+textarea:focus + .line {
+  width: 100%;
+  transition: width 0.8s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .contact .container {
+    padding: 0 1rem;
+  }
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.error-message {
+  color: red;
+}
+
+.sent-success {
+  font-weight: 900%;
+  color: orange;
 }
