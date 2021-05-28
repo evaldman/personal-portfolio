@@ -41,12 +41,20 @@ function Navbar() {
                 offset={-105}
                 className="nav-link"
                 href="#"
+                duration={100}
               >
                 projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="contact" className="nav-link" href="#">
+              <Link
+                smooth={true}
+                to="contact"
+                offset={-105}
+                className="nav-link"
+                href="#"
+                duration={100}
+              >
                 contact me
               </Link>
             </li>
