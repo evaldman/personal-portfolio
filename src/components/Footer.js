@@ -36,7 +36,7 @@ function Footer() {
                 <br />
                 <a className="footer-nav">View Source Code</a>
                 <br />
-                <a className="footer-nav">....</a>
+                <a className="footer-nav">.....</a>
               </div>
             </div>
           </div>
