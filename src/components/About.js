@@ -19,6 +19,12 @@ function About() {
             passion for puzzles, I bring strong skills in client relations,
             attention to detail and problem solving.
           </p>
+          <p>
+            While away from the computer, I enjoy spending time with my family,
+            going on long hikes and camping trips, puzzles, cars. I have a new
+            found appreciation for working with wood, and am currently
+            experimenting with small builds.
+          </p>
         </div>
       </div>
     </div>
